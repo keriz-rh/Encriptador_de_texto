@@ -8,8 +8,6 @@ function encriptar() {
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
     
-
-
     let textocifrado = texto 
         .replace(/e/gi, "enter")
         .replace(/i/gi, "imesr")
@@ -28,4 +26,29 @@ function encriptar() {
         parrafo.textContent = "Ingresa el texto que quieres desencriptar o desencritar"
         alert("Debes ingresar algún texto.");
     }
+    }
+
+    function desencriptar(){
+        let texto = document.getElementById("texto").value;
+        let linkArco = document.getElementById("linkArco");
+        let tituloMensaje = document.getElementById("titulo-mensaje");
+        let parrafo = document.getElementById("parrafo");
+        
+        let textocifrado = texto
+        .replace(/enter/gi, "e")
+        .replace(/imesr/gi, "i")
+        .replace(/ai/gi, "a")
+        .replace(/ober/gi, "o")
+        .replace(/ufat/gi, "u")
+
+        if (texto.length != 0) {
+            document.getElementById("texto").value = textocifrado;
+            tituloMensaje.textContent = "Texto desencriptado con éxito"; 
+            linkArco.src = "images/link-header.png";
+        } else {
+        document.getElementById("linkArco").src = "images/link_apunta.png";
+        tituloMensaje.textContent = "Ningún mensaje fue encontrado."
+        parrafo.textContent = "Ingresa el texto que quieres desencriptar o desencritar"
+        alert("Debes ingresar algun texto");
+        }
     }

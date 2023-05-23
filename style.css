@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 /* Estilo para el contenedor principal */
@@ -9,6 +10,8 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    /* background-image: url(images/patron.jpg); */
+    background-color:  #1f2f3222 ;
 }
 
 /* Estilo para el campo de texto */
@@ -86,7 +89,7 @@
     padding: 2%;
     gap: 8px; /* espaciamento interno entre items */
     width: 25%;
-    background-color: #0a3871;
+    background-color:  #05c1d3;
     border-radius: 24px;
     font-family: "Inter";
     font-size: 18px;
@@ -106,7 +109,7 @@
     gap: 8px; /* espaciamento interno entre items */
     width: 25%;
     background: #d8dfe8;
-    border: 1px solid #0a3871;
+    border: 1px solid  #05c1d3;
     border-radius: 24px;
     font-family: "Inter";
     font-weight: 400;
@@ -188,6 +191,8 @@
     .container{
         display: flex;
         direction: row; /*dirección en fila*/
+        
+;
     }
 
     .encriptar {
