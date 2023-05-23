@@ -24,7 +24,7 @@ function encriptar() {
         document.getElementById("linkArco").src = "images/link_apunta.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado."
         parrafo.textContent = "Ingresa el texto que quieres desencriptar o desencritar"
-        alert("Debes ingresar algún texto.");
+        swal("Ooops!", "Te falta el texto", "warning");
     }
     }
 
@@ -49,6 +49,6 @@ function encriptar() {
         document.getElementById("linkArco").src = "images/link_apunta.png";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado."
         parrafo.textContent = "Ingresa el texto que quieres desencriptar o desencritar"
-        alert("Debes ingresar algun texto");
+        swal("Ooops!", "Te falta el texto", "warning");
         }
     }
