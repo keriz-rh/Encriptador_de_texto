@@ -1,1 +1,1 @@
-Se muestra el codigo del encriptador cumpliendo con el Challenge dado Alura Latam.
+Se muestra el codigo del encriptador cumpliendo con el Challenge dado en Alura Latam.
