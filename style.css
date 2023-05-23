@@ -1,4 +1,258 @@
+/* Estilo global para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/* Estilo para el contenedor principal */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
 
+/* Estilo para el campo de texto */
+.texto {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+}
 
+/* Estilo para el texto de marcador de posición en el campo de texto */
+.texto::placeholder {
+    color: #0a3871;
+    
+}
 
+/* Estilos para el campo de texto cuando está enfocado o activo */
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+/* Estilos para el contenedor de los términos */
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+/* Estilos para el texto de los términos */
+.terminos p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Estilos para el contenedor de botones */
+.botones {
+    display: flex;
+    flex-direction: row; /* dirección de los elementos en fila. */
+    align-items: flex-start; /* alinear elementos en el inicio del contenedor */
+    padding: 1% 0; /* arriba padding de 1 y a los lados 0 */
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+/* Estilos para el botón de encriptar */
+.btn-encriptar {
+    align-items: center; /* alinear elementos al centro verticalmente */
+    justify-content: center; /* alinear elementos al centro horizontalmente */
+    padding: 2%;
+    gap: 8px; /* espaciamento interno entre items */
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px; /* ancho de línea */
+    text-align: center;
+    color: #FFFF;
+}
+
+/* Estilos para el botón de desencriptar */
+.btn-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row; /* Para que quede en horizontal */
+    align-items: flex-start; /* Items alineados al inicio */
+    justify-content: center;
+    padding: 2%;
+    gap: 8px; /* espaciamento interno entre items */
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+/* Estilos para los botones al pasar el cursor por encima */
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
+    margin: 0.5%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 90%;
+    width: 30%;
+    left: 60%;
+    top: 5%;
+    background: #ffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+    border-radius: 32px;
+}
+
+.mensaje_encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 80%;
+    top: 73%;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
+    background-color: #0a387150;
+    border-radius: 25px;
+}
+
+.mensaje_encriptado h2{
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+}
+
+.mensaje_encriptado p{
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495055;
+}
+
+.encriptado img {
+    position: absolute;
+    width: 115%;
+    height: 68%;
+    top: 5%;
+}
+
+/*Responsive desing*/
+
+@media (max-width: 47em) {
+    .container{
+        display: flex;
+        direction: row; /*dirección en fila*/
+    }
+
+    .encriptar {
+        width: 100%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 65%;
+    }
+
+    .terminos p {
+        font-size: 16px;
+    }
+
+    .terminos img {
+        width: 5%;
+        height: 2;
+    }
+
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .btn-desencriptar:hover, .btn-encriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .encriptado {
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+
+    .mensaje_encriptado{
+        width: 100%;
+        top: 0;
+        color: #495055;
+        background-color: #ffff;
+        box-shadow: none;
+
+    }
+
+    /*Eliminamos la imagen de escena para optimizar la página*/
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+    
+}
