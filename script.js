@@ -1,6 +1,5 @@
 /*Funcion vinculada al botón del mismo nombre en HTML
 atraves del atributo onclick*/
-
 function encriptar() {
 
     let texto = document.getElementById("texto").value;
