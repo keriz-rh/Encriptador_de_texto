@@ -10,7 +10,7 @@ function encriptar() {
     
     let textocifrado = texto 
         .replace(/e/gi, "enter")
-        .replace(/i/gi, "imesr")
+        .replace(/i/gi, "imes")
         .replace(/a/gi, "ai")
         .replace(/o/gi, "ober")
         .replace(/u/gi, "ufat")
@@ -36,7 +36,7 @@ function encriptar() {
         
         let textocifrado = texto
         .replace(/enter/gi, "e")
-        .replace(/imesr/gi, "i")
+        .replace(/imes/gi, "i")
         .replace(/ai/gi, "a")
         .replace(/ober/gi, "o")
         .replace(/ufat/gi, "u")
