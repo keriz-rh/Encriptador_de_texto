@@ -16,7 +16,7 @@
 
 header{
     display: flex;
-    background-color: #0a3871;
+    background-color: #05acbb;
     height: 8%;
     width: 100%;
     flex-direction: row;
@@ -48,7 +48,7 @@ header{
 
 /* Estilo para el texto de marcador de posición en el campo de texto */
 .texto::placeholder {
-    color: #0a3871;
+    color: #05acbb;
     
     
 }
@@ -106,9 +106,10 @@ header{
     padding: 2%;
     gap: 8px; /* espaciamento interno entre items */
     width: 25%;
-    background-color:  #0a3871;
+    background-color:  #05c1d3;
     border-radius: 24px;
     margin-right: 2%;
+    border: none;
     font-family: "Inter";
     font-size: 18px;
     line-height: 19px; /* ancho de línea */
@@ -128,14 +129,14 @@ header{
     width: 25%;
     margin-bottom: 2%;
     background: #d8dfe8;
-    border: 1px solid  #0a3871;
+    border: 1px solid  #05c1d3;
     border-radius: 24px;
     font-family: "Inter";
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
     text-align: center;
-    color: #0a3871;
+    color: #07a6b5;
 }
 
 /* Estilos para los botones al pasar el cursor por encima */
