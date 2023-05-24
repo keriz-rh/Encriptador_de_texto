@@ -11,7 +11,21 @@
     width: 100vw;
     height: 100vh;
     /* background-image: url(images/patron.jpg); */
-    background-color:  #1f2f3222 ;
+    background-color:  #ffff;
+}
+
+header{
+    display: flex;
+    background-color: #0a3871;
+    height: 8%;
+    width: 100%;
+    flex-direction: row;
+    padding: 0px;
+}   
+
+.logo {
+    height: 10%;
+    width: 10%;
 }
 
 /* Estilo para el campo de texto */
@@ -20,8 +34,10 @@
     width: 42%;
     height: 60%;
     left: 12%;
-    top: 15%;
+    top: 5%;
+    resize: none;
     border: none;
+    border-radius: 2%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -33,6 +49,7 @@
 /* Estilo para el texto de marcador de posición en el campo de texto */
 .texto::placeholder {
     color: #0a3871;
+    
     
 }
 
@@ -53,7 +70,7 @@
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 80%;
+    top: 67%;
 }
 
 /* Estilos para el texto de los términos */
@@ -79,7 +96,7 @@
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 82%;
+    top: 70%;
 }
 
 /* Estilos para el botón de encriptar */
@@ -89,8 +106,9 @@
     padding: 2%;
     gap: 8px; /* espaciamento interno entre items */
     width: 25%;
-    background-color:  #05c1d3;
+    background-color:  #0a3871;
     border-radius: 24px;
+    margin-right: 2%;
     font-family: "Inter";
     font-size: 18px;
     line-height: 19px; /* ancho de línea */
@@ -108,8 +126,9 @@
     padding: 2%;
     gap: 8px; /* espaciamento interno entre items */
     width: 25%;
+    margin-bottom: 2%;
     background: #d8dfe8;
-    border: 1px solid  #05c1d3;
+    border: 1px solid  #0a3871;
     border-radius: 24px;
     font-family: "Inter";
     font-weight: 400;
@@ -131,10 +150,10 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    height: 90%;
+    height: 80%;
     width: 30%;
-    left: 60%;
-    top: 5%;
+    left: 58%;
+    top: 3%;
     background: #ffff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
     border-radius: 32px;
@@ -185,6 +204,42 @@
     top: 5%;
 }
 
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Intel";
+    font-style: normal;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social li {
+    margin: 0 10px;
+}
+
+.social img {
+    vertical-align: middle;
+}
+
+.social a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+
 /*Responsive desing*/
 
 @media (max-width: 47em) {
@@ -195,6 +250,11 @@
 ;
     }
 
+    header img {
+        height: 22%;
+        width: 22%;
+    }
+
     .encriptar {
         width: 100%;
     }
@@ -203,13 +263,13 @@
         width: 80%;
         height: 60%;
         left: 10%;
-        top: 5%;
+        top: 2%;
     }
 
     .terminos {
         width: 80%;
         left: 10%;
-        top: 65%;
+        top: 62%;
     }
 
     .terminos p {
@@ -224,7 +284,7 @@
     .botones {
         width: 80%;
         left: 10%;
-        top: 70%;
+        top: 66%;
     }
     .btn-encriptar, .btn-desencriptar{
         width: 48%;
@@ -241,7 +301,7 @@
         width: 80%;
         height: 15%;
         left: 10%;
-        top: 80%;
+        top: 74%;
     }
 
     .mensaje_encriptado{
